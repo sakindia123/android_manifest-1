@@ -9,6 +9,10 @@
            fetch="git://github.com/CyanogenMod/" />
   <remote name="koush"
            fetch="git://github.com/koush/" />  
+  <remote name="androidarmv6"
+           fetch="git://github.com/androidarmv6/" />  
+  <remote name="sakindia123"
+           fetch="git://github.com/sakindia123/" />  
   <default revision="refs/tags/android-4.2.2_r1.2"
            remote="aosp"
            sync-j="4" />
@@ -199,13 +203,13 @@
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
   <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
-  <project path="external/wpa_supplicant_8" name="androidarmv6/android_external_wpa_supplicant_8" revision="cm-10.1" />
+  <project path="external/wpa_supplicant_8" name="androidarmv6/android_external_wpa_supplicant_8" remote="androidarmv6" revision="cm-10.1" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="sakindia123/android_frameworks_av" remote="jellybean" />
+  <project path="frameworks/av" name="sakindia123/android_frameworks_av" remote="sakindia123" revision="jellybean" />
   <project path="frameworks/base" name="android_frameworks_base" remote="rascarlo" revision="jb-ras-mr1.1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" groups="pdk" />
@@ -233,13 +237,13 @@
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="rascarlo" revision="jb-ras-mr1.1" />
-  <project path="hardware/libhardware_legacy" name="androidarmv6/android_hardware_libhardware_legacy" revision="cm-10.1" />
-  <project path="hardware/msm7k" name="androidarmv6/android_hardware_msm7k" revision="cm-10.1" />
+  <project path="hardware/libhardware_legacy" name="androidarmv6/android_hardware_libhardware_legacy" remote="androidarmv6" revision="cm-10.1" />
+  <project path="hardware/msm7k" name="androidarmv6/android_hardware_msm7k" revision="cm-10.1" remote="androidarmv6" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
   <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="qcom" />
-  <project path="hardware/qcom/gps" name="androidarmv6/android_hardware_qcom_gps" revision="cm-10.1" />
+  <project path="hardware/qcom/gps" name="androidarmv6/android_hardware_qcom_gps" remote="androidarmv6" revision="cm-10.1" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom" />
@@ -247,7 +251,7 @@
   <project path="hardware/qcom/display-legacy" name="androidarmv6/android_hardware_qcom_display-legacy" revision="cm-10.1" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
-  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
+  <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" />
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
@@ -359,8 +363,8 @@
   <project path="external/koush/Superuser" name="Superuser" remote="koush" revision="master" />
   <project path="external/koush/Widgets" name="Widgets" remote="koush" revision="master" />
   
-  <project path="hardware/qcom/media_legacy" name="androidarmv6/android_hardware_qcom_media_legacy"  revision="cm-10.1"/>
-  <project path="vendor/htc/pico" name="sakindia123/ics-vendor-pico" revision="master" />
-  <project path="kernel/htc/pico" name="sakindia123/android_kernel_htc_pico" revision="master" />
+  <project path="hardware/qcom/media_legacy" name="androidarmv6/android_hardware_qcom_media_legacy" remote="androidarmv6" revision="cm-10.1"/>
+  <project path="vendor/htc/pico" name="sakindia123/ics-vendor-pico" remote="sakindia123" revision="master" />
+  <project path="kernel/htc/pico" name="sakindia123/android_kernel_htc_pico" remote="sakindia123" revision="master" />
   
 </manifest>
